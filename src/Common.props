@@ -10,7 +10,8 @@
     <xrLibDir>$(xrLibRootDir)$(Configuration)\</xrLibDir>
     <xrIntDir>$(SolutionDir)..\_build\intermediate\$(Configuration)\</xrIntDir>
     <xrSdkDir>$(SolutionDir)..\sdk\</xrSdkDir>
-    <xrGameDir>$(XRAY_16X_GAME)</xrGameDir>
+    <xrGameDir>$(SolutionDir)..\bin\</xrGameDir>
+    <xrLibs>D:\CoC mk2\gitnep\xray-16-libraries\</xrLibs>
     <xrGameBinDir>$(xrGameDir)bin\</xrGameBinDir>
     <xr3rdPartyDir>$(SolutionDir)3rd party\</xr3rdPartyDir>
     <dxSdkDir>$(xrSdkDir)include\dxsdk\</dxSdkDir>
@@ -76,6 +77,10 @@
     </BuildMacro>
     <BuildMacro Include="xrGameDir">
       <Value>$(xrGameDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="xrLibs">
+      <Value>$(xrLibs)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="xrGameBinDir">

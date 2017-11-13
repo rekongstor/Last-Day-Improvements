@@ -14,9 +14,5 @@ Last Day 1.1 (+ patch from 11.11.17)
 ----
 
 TODO first list:
-- move compiled bin files to Solution folder
-- move library files to Solution folder
-- update library files
 - remove LuaJIT-1.1.8 or clean LuaJIT-1.1.8.pdb from bins
-- make build dependencies for luajit-2 to compile Solution without compiling luajit-2
 - make res\gamedata for own changes based on Last Day 1.1 +patch
