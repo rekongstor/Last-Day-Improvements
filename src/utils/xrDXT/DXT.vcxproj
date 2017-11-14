@@ -35,6 +35,7 @@
     <IntDir>$(xrIntDir)$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.dll</TargetExt>
+    <IncludePath>$(xr3rdPartyDir);$(IncludePath);$(xrSdkDir)include;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>

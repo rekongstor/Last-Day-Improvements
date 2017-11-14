@@ -33,6 +33,7 @@
     <OutDir>$(xrLibDir)</OutDir>
     <IntDir>$(xrIntDir)$(ProjectName)\</IntDir>
     <TargetName>libogg_static</TargetName>
+    <IncludePath>$(xr3rdPartyDir);$(IncludePath);$(xrSdkDir)include;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

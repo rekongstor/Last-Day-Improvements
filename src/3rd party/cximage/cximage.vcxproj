@@ -38,6 +38,7 @@
     <TargetName>$(ProjectName)</TargetName>
     <TargetExt>.lib</TargetExt>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>$(xr3rdPartyDir);$(IncludePath);$(xrSdkDir)include;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
