@@ -39,7 +39,7 @@ There're all the dll's except these ones:
 
 I'm sure soft_oal.dll, wrap_oal.dll and eax.dll are probably modified to make the game do EAX and Open AL Soft stuff on any soundboard.
 
-lua51.dll is located on .\src\3rd party\luajit-2\bin and can be copied to game binaries but that's not thet necessary.
+lua51.dll is located on .\src\3rd party\luajit-2\bin and can be copied to game binaries but that's not that necessary.
 
 ----
 
