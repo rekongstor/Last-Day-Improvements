@@ -1,0 +1,10 @@
+- is for undone
++ is for done
+
++ Actor doesn't die - merged with CoC commit c63698bb5bbbb818ee0dd7bfe2bca8adeaa25f8d 
++ Main menu video options are corrupted. Fix or delete incorrect ones
+Issues:
+r2_ls_squality, Качество теней - restricted to 0.5-1.0 instead of 0.5-5.0. Step is 0.1
+r__detail_height, Высота травы - disabled
+r2_sun_shafts_value, Интенсивность лучей - disabled
+- Try to set r2_ls_squality back to 0.5-5.0 values
