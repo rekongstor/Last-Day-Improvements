@@ -490,6 +490,7 @@ void CNightVisionEffector::Start(const shared_str& sect, CActor* pA, bool play_s
 {
 	m_pActor			= pA;
 	AddEffector			(m_pActor, effNightvision, sect);
+	g_pGamePersistent->Environment().CurrentEnv->nightvision_enabled = true;
 	if(play_sound)
 	{
 		PlaySounds(eStartSound);
@@ -499,7 +500,8 @@ void CNightVisionEffector::Start(const shared_str& sect, CActor* pA, bool play_s
 
 void CNightVisionEffector::Stop(const float factor, bool play_sound)
 {
-	if(!m_pActor)		return;
+	if (!m_pActor)		return;
+	g_pGamePersistent->Environment().CurrentEnv->nightvision_enabled = false;
 	CEffectorPP* pp		= m_pActor->Cameras().GetPPEffector((EEffectorPPType)effNightvision);
 	if(pp)
 	{

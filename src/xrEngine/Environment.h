@@ -192,6 +192,10 @@ public:
     void on_device_destroy();
 
     shared_str m_identifier;
+
+	bool nightvision_enabled;
+	float nightvision_ambi_add;
+	float nightvision_hemi_add;
 };
 
 class ENGINE_API CEnvDescriptorMixer : public CEnvDescriptor
@@ -207,6 +211,8 @@ public:
 
     float fog_near;
     float fog_far;
+	float ambi_nv_add;
+	float hemi_nv_add;
 public:
     CEnvDescriptorMixer(shared_str const& identifier);
     INGAME_EDITOR_VIRTUAL void lerp(CEnvironment* parent, CEnvDescriptor& A, CEnvDescriptor& B, float f, CEnvModifier& M, float m_power);

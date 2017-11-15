@@ -24,7 +24,7 @@ from Yandex.Disk - https://yadi.sk/d/fSU0xaMd3PfpZ5
 or Goodle Drive - https://drive.google.com/file/d/1xry3OuVdsHjJpBY8H90BwYRHv3wQwqzW
 and unzip them anywhere you want.
 2) Open ./src/engile.sln with VS 2013
-3) In Property Manager (View\Other windows\Property manager) go to and project (eg xrGame) and in Release | Win32 open Common sheet. Then go to User Macros and change xrLibs directory with your xray-16-libraries\ with \ at the end.
+3) In Property Manager (View\Other windows\Property manager) go to any project (eg xrGame) and in Release | Win32 open Common sheet. Then go to User Macros and change xrLibs directory with your xray-16-libraries\ with \ at the end.
 Now you can build with Build Solution. It will compile xrEngine.exe and other .dll's. They will be located in ./bin/bin_rel
 - Before copying new files make a backup for original files. 
 - Game won't run properly if you won't delete appdata/shaders_cache folder. Also sometimes is required to delete appdata/user.ltx too.

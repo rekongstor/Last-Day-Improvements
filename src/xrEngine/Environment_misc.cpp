@@ -243,6 +243,9 @@ m_identifier(identifier)
     tb_id = "";
 
     env_ambient = NULL;
+	nightvision_enabled = false;
+	nightvision_ambi_add = pSettings->r_float("nightvision_light", "r2_ambi_nv_add");
+	nightvision_hemi_add = pSettings->r_float("nightvision_light", "r2_hemi_nv_add");
 }
 
 #define C_CHECK(C) if (C.x<0 || C.x>2 || C.y<0 || C.y>2 || C.z<0 || C.z>2) { Msg("! Invalid '%s' in env-section '%s'",#C,m_identifier.c_str());}
@@ -354,6 +357,8 @@ void CEnvDescriptor::on_device_destroy()
 CEnvDescriptorMixer::CEnvDescriptorMixer(shared_str const& identifier) :
 CEnvDescriptor(identifier)
 {
+	ambi_nv_add = pSettings->r_float("nightvision_light", "ambi_nv_add");
+	hemi_nv_add = pSettings->r_float("nightvision_light", "hemi_nv_add");
 }
 
 void CEnvDescriptorMixer::destroy()
@@ -474,6 +479,10 @@ void CEnvDescriptorMixer::lerp(CEnvironment*, CEnvDescriptor& A, CEnvDescriptor&
     if (Mdf.use_flags.test(eAmbientColor))
         ambient.add(Mdf.ambient).mul(modif_power);
 
+	if (nightvision_enabled)
+		ambient.add(ambi_nv_add);
+
+
     hemi_color.lerp(A.hemi_color, B.hemi_color, f);
 
     if (Mdf.use_flags.test(eHemiColor))
@@ -485,6 +494,13 @@ void CEnvDescriptorMixer::lerp(CEnvironment*, CEnvDescriptor& A, CEnvDescriptor&
         hemi_color.y *= modif_power;
         hemi_color.z *= modif_power;
     }
+
+	if (nightvision_enabled)
+	{
+		hemi_color.x += hemi_nv_add;
+		hemi_color.y += hemi_nv_add;
+		hemi_color.z += hemi_nv_add;
+	}
 
     sun_color.lerp(A.sun_color, B.sun_color, f);
 
