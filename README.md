@@ -15,6 +15,7 @@ The original engine is used in S.T.A.L.K.E.R. Call of Pripyat game released by G
 ----
 
 Current issues you can find in issues.txt
+Current todo list you can find in todo.txt
 
 ----
 

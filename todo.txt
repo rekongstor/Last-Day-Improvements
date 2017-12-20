@@ -1,0 +1,59 @@
+1) The first thing I want to make is some SPECIAL (Fallout like RPG characteristics system) for LDpp. Probably stats will raise from 1.0 up to 5.0 with 1.0 step. Like this:
+S - Strength stays same - Strength (Сила). It affects on: 
+Max weight actor can carry (indirectly affects on stamina cost)
+Guns recoil
+Meelee (knives) damage
+
+P - Perception now is for Accuracy (Точность) affects on:
+Actor (not weapon dispersion) accuracy in different posiotions
+
+E - Endurance now is for Survivability (Выживаемость) affects on:
+Actor immunities to every type of damage
+Items (medicine, drugs, food, etc.) negative effects
+
+C - Charisma now is for Trade abilities (Навыки торговли) affects on:
+Trade discounts 
+Quest rewards and almost all incomings such as PDA selling and other features
+
+I - Intelligent now is for Medicine (Медицина) affects on:
+Items (medicine, drugs, etc.) positive effects
+
+A - Agility stays same - Agility (Ловкость). It affects on:
+Actor movement speed
+Actor jump height
+Actor stamina recovery
+
+L - Luck probably stays same - Luch (Удача). It affects on:
+Dead stalkers loot
+Dead monsters loot
+Stashes loot
+
+Do remember that there're different stages in the game such as early, middle and late game.
+Early is for money and equipment accumulation. Do whatever you can yo make some money and then buy some equipment (different for various gameplay strategies like Iron Man and Normal mode)
+
+Middle is for the same but actor already holds some temporary equipment and has many ways to make more money like 
+mutant hunting (better knife and weapons), artefact hunting (better detector), head hunting (better weapons) and doing quests.
+The only thing that unites every method is outfit (and helmet). 
+
+Late game is for completing main questline (if you signed for this). Actor holds most of or all needed game equipment (outfit+helmet, weapons, artifacts, ammo, detector) and has enough money 
+(or money incomings) to take care of all this equipment.
+
+Now let me explain my way of understanding SPECIAL system stage influence:
+With higher Strength stats actor can held most of early game equipment for sell and late game eq. for survival. More free weight - more stamina to spend.
+Always affects every stage of the game with gun recoil thing. Probably having high Strength param grants actor ability to never feel Gun recoil.
+
+With higher Perception Actor can always have a accurate first shot. Affects for Sniper-role players in every stage of the game but in Late game more. 
+Having high Perception grants ability to never feel dispersion from actor in crouch and super-crouch positions.
+
+With higher Endurance Actor can survive some minor battles in early game and be kind of immortal for some late game battles. Highly must-to-have parameter for "Iron Men".
+
+With higher Charisma and Luck it's kinda easy to reach certain game stage at cost of other valuable parameters.
+
+With higer Intelligence actor can survive less medicine (and money paid for it). Helps is some sticky situations but kinda unreliable. Affects bunch of stages indirectly.
+
+With higher Agility actor can run faster, jump higher at the lower stamina cost. Affects every stage of the game. But with over-weight actor still has troubles with stamina. 
+This means player has to combine Strength and Agility to reach some balance.
+
+
+______________________________________________________________
+
